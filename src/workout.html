@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отжимания от перекладины</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <div class="header__inner">
+                    <a class="header__catalog-btn" href="#">Каталог</a>
+                    <div class="search">
+                        <input class="search__input" type="text" placeholder="Я ищу...">
+                    </div>
+                    <div class="header__buttons">
+                        <button class="header__btn header__btn--search" type="button">
+                            <svg class="header__btn-icon" width="26" height="27" viewBox="0 0 26 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.3819 16.9036L24.7693 26M19.3347 10.1673C19.3347 15.2303 15.2303 19.3347 10.1673 19.3347C5.10436 19.3347 1 15.2303 1 10.1673C1 5.10436 5.10436 1 10.1673 1C15.2303 1 19.3347 5.10436 19.3347 10.1673Z"
+                                    stroke="#090808" stroke-width="2" />
+                            </svg>
+                        </button>
+                        <button class="header__btn" type="button">
+                            <svg class="header__btn-icon" width="32" height="29" viewBox="0 0 32 29" fill="none">
+                                <path class="header__btn-path"
+                                    d="M0 1H6.2386L9.94568 17.2308M9.94568 17.2308H26.2289L30 4.71872L7.01261 4.39282M9.94568 17.2308C9.94568 17.2308 8.01358 17.2308 8.01358 19.1048C8.00802 19.3569 8.05359 19.6077 8.14755 19.8418C8.24151 20.0759 8.3819 20.2885 8.56028 20.4669C8.73865 20.6453 8.9513 20.7857 9.1854 20.8796C9.4195 20.9736 9.67021 21.0191 9.92241 21.0136H27.4161M13.8855 25.2386C13.8855 26.3732 12.9658 27.2929 11.8312 27.2929C10.6967 27.2929 9.77691 26.3732 9.77691 25.2386C9.77691 24.104 10.6967 23.1843 11.8312 23.1843C12.9658 23.1843 13.8855 24.104 13.8855 25.2386ZM26.1591 25.2386C26.1591 26.3732 25.2393 27.2929 24.1048 27.2929C22.9702 27.2929 22.0504 26.3732 22.0504 25.2386C22.0504 24.104 22.9702 23.1843 24.1048 23.1843C25.2393 23.1843 26.1591 24.104 26.1591 25.2386Z"
+                                    stroke="black" stroke-width="2" />
+                            </svg>
+                            <span class="header__btn-title">Корзина</span>
+                            <span class="header__btn-counter"></span>
+                        </button>
+                        <button class="header__btn" type="button">
+                            <svg class="header__btn-icon" width="26" height="27" viewBox="0 0 26 27" fill="none">
+                                <path class="header__btn-path"
+                                    d="M12.9495 12.1735C16.035 12.1735 18.5363 9.67224 18.5363 6.58676C18.5363 3.50128 16.035 1 12.9495 1C9.86405 1 7.36277 3.50128 7.36277 6.58676C7.36277 9.67224 9.86405 12.1735 12.9495 12.1735Z"
+                                    stroke="black" stroke-width="2" />
+                                <path class="header__btn-path"
+                                    d="M24.2585 26C24.2585 23.0007 23.067 20.1242 20.9462 18.0034C18.8253 15.8825 15.9489 14.6911 12.9496 14.6911C9.95024 14.6911 7.07377 15.8825 4.95293 18.0034C2.8321 20.1242 1.64063 23.0007 1.64062 26H24.2585Z"
+                                    stroke="black" stroke-width="2" />
+                            </svg>
+                            <span class="header__btn-title">Профиль</span>
+                        </button>
+                        <button class="header__btn header__btn--favorite" type="button">
+                            <svg class="header__btn-icon" width="29" height="25" viewBox="0 0 29 25" fill="none"">
+                                <path class=" header__btn-path"
+                                d="M2.12619 8.66163C1.35227 4.73536 4.2124 1.33429 8.67083 1.01305C12.5965 0.732602 14.5425 5.0566 14.9351 5.88265C14.9394 5.8965 14.9486 5.90868 14.9613 5.91736C14.9739 5.92603 14.9893 5.93073 15.0052 5.93073C15.021 5.93073 15.0364 5.92603 15.0491 5.91736C15.0617 5.90868 15.0709 5.8965 15.0753 5.88265C16.8979 1.33939 20.2179 1.14563 21.3844 1.03855C24.5249 0.732602 28.7366 2.94049 27.8898 8.08544C26.6784 15.2241 14.9239 23.2857 14.9239 23.2857C14.9239 23.2857 3.6572 16.3357 2.12619 8.66163Z"
+                                stroke="black" stroke-width="2" />
+                            </svg>
+                            <span class="header__btn-title">Нравится</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="crumbs">
+                    <span class="crumbs__item">Главная</span>
+                    <span class="crumbs__item crumbs__item--сurrent">Умная площадка</span>
+                </div>
+                <section class="workout">
+                    <h2 class="workout__title title">Отжимания от перекладины</h2>
+                    <div class="workout__banner">
+                        <div class="workout__banner-image">
+                            <img class="workout__logo" src="./images/workout_1.svg" alt="workout">
+                        </div>
+                        <span class="workout__name">Отжимания от перекладины</span>
+                    </div>
+                    <ol class="workout__list">
+                        <li class="workout__item">Расположите ладони на краю горизонтальной скамьи.</li>
+                        <li class="workout__item">Ноги поставьте на пол, напрягите пресс. На выдохе вытолкните вес тела
+                            вверх, ощущая работу трицепса. Локти при этом смотрят назад — строго не в стороны.</li>
+                        <li class="workout__item">Отталкиваясь от скамьи как можно сильнее, раскрывая грудь —
+                            задержитесь в положении 1-2 сек.</li>
+                        <li class="workout__item">На вдохе медленно опуститесь вниз, не сгибая коленей и держа пресс
+                            напряженным. В нижней точке движения локти должны быть параллельны полу</li>
+                    </ol>
+                    <a class="workout__btn btn-primary" href="#">Следующая программа</a>
+                    <a class="workout__back-btn back-btn" href="./program.html">Назад</a>
+                    <div class="workout__timetable">
+                        <div class="workout__image">
+                            <img class="workout__logo" src="./images/workout_1.svg" alt="workout">
+                        </div>
+                        <div class="workout__tables">
+                            <table class="table">
+                                <caption class="table__title">Неделя-1</caption>
+                                <tr class="table__row">
+                                    <th class="table__cell table__cell--header">День</th>
+                                    <th class="table__cell table__cell--header">Подходы</th>
+                                    <th class="table__cell table__cell--header">повторения</th>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">1</td>
+                                    <td class="table__cell">1</td>
+                                    <td class="table__cell">20</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">2</td>
+                                    <td class="table__cell">2</td>
+                                    <td class="table__cell">20</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">3</td>
+                                    <td class="table__cell">3</td>
+                                    <td class="table__cell">15</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">4</td>
+                                    <td class="table__cell">4</td>
+                                    <td class="table__cell">15</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">5</td>
+                                    <td class="table__cell">5</td>
+                                    <td class="table__cell">10</td>
+                                </tr>
+                            </table>
+                            <table class="table">
+                                <caption class="table__title">Неделя-2</caption>
+                                <tr class="table__row">
+                                    <th class="table__cell table__cell--header">День</th>
+                                    <th class="table__cell table__cell--header">Подходы</th>
+                                    <th class="table__cell table__cell--header">повторения</th>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">1</td>
+                                    <td class="table__cell">3</td>
+                                    <td class="table__cell">25</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">2</td>
+                                    <td class="table__cell">4</td>
+                                    <td class="table__cell">25</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">3</td>
+                                    <td class="table__cell">5</td>
+                                    <td class="table__cell">20</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">4</td>
+                                    <td class="table__cell">4</td>
+                                    <td class="table__cell">15</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">5</td>
+                                    <td class="table__cell">5</td>
+                                    <td class="table__cell">20</td>
+                                </tr>
+                            </table>
+                            <table class="table">
+                                <caption class="table__title">Неделя-3</caption>
+                                <tr class="table__row">
+                                    <th class="table__cell table__cell--header">День</th>
+                                    <th class="table__cell table__cell--header">Подходы</th>
+                                    <th class="table__cell table__cell--header">повторения</th>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">1</td>
+                                    <td class="table__cell">3</td>
+                                    <td class="table__cell">25</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">2</td>
+                                    <td class="table__cell">4</td>
+                                    <td class="table__cell">25</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">3</td>
+                                    <td class="table__cell">4</td>
+                                    <td class="table__cell">25</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">4</td>
+                                    <td class="table__cell">5</td>
+                                    <td class="table__cell">25</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">5</td>
+                                    <td class="table__cell">5</td>
+                                    <td class="table__cell">25</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="workout__product">
+                        <h2 class="workout__product-title title">Тренажер используемый для упражнения</h2>
+                        <a class="workout__product-card" href="#">
+                            <img class="workout__product-image" src="./images/product.png" alt="product">
+                            <span class="workout__product-name">Силовой тренажер</span>
+                        </a>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

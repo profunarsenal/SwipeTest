@@ -10,45 +10,54 @@ const devServer = (isDev) => !isDev ? {} : {
     }
 };
 
-module.exports = ({develop}) => ({
-  mode: develop ? 'development' : 'production',
-  entry: './src/index.js',
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
-    clean: true,
-  },
-  plugins: [
-      new HtmlWebpackPlugin({
-          template: './src/index.html'
-      }),
-      new MiniCssExtractPlugin({
-          filename: './styles/main.css'
-      })
-  ],
-  module: {
-      rules: [
-          {
-              test: /\.(?:ico|png|jpg|jpeg|svg)$/i,
-              type: 'asset/inline'
-          },
-          {
-              test: /\.html$/i,
-              loader: 'html-loader'
-          },
-          {
-              test: /\.css$/i,
-              use: [
-                MiniCssExtractPlugin.loader, 'css-loader'
-              ]
-          },
-          {
-              test: /\.scss$/i,
-              use: [
-                MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'
-              ]
-          }
-      ]
-  },
-  ...devServer(develop),
+module.exports = ({ develop }) => ({
+    mode: develop ? 'development' : 'production',
+    entry: './src/index.js',
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js',
+        clean: true,
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './src/index.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'program.html',
+            template: './src/program.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'workout.html',
+            template: './src/workout.html'
+        }),
+        new MiniCssExtractPlugin({
+            filename: './styles/main.css'
+        })
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.(?:ico|png|jpg|jpeg|svg)$/i,
+                type: 'asset/inline'
+            },
+            {
+                test: /\.html$/i,
+                loader: 'html-loader'
+            },
+            {
+                test: /\.css$/i,
+                use: [
+                    MiniCssExtractPlugin.loader, 'css-loader'
+                ]
+            },
+            {
+                test: /\.scss$/i,
+                use: [
+                    MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'
+                ]
+            }
+        ]
+    },
+    ...devServer(develop),
 });

@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=document.querySelector(".header__btn--favorite");e.addEventListener("click",(()=>{e.classList.toggle("active")}))})();
